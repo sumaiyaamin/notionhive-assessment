@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustedBySection from "@/components/TrustedBy";
 import ServicesSection from "@/components/ServicesSection";
+import WhyUsSection from "@/components/WhyUsSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <Header />
         <HeroSection />
         <ServicesSection />
+        <WhyUsSection />
         {children}
       </body>
     </html>

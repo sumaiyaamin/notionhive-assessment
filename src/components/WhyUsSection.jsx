@@ -16,7 +16,7 @@ const WhyUsSection = () => {
       bg: '#CBF5E599',
     },
     {
-      icon: '/icons/Icon (1).svg',
+      icon: '/icons/content.svg',
       title: 'Crafting tailored content',
       subtitle: 'Tailored to your audience intent',
       status: 'Selected',
@@ -24,7 +24,7 @@ const WhyUsSection = () => {
       bg: '#FCF1E1',
     },
     {
-      icon: '/icons/Icon (2).svg',
+      icon: '/icons/strategy.svg',
       title: 'Utilizing SEO strategies',
       subtitle: 'Such as social media engagement',
       status: 'Selected',
@@ -32,7 +32,7 @@ const WhyUsSection = () => {
       bg: '#CBF5E599',
     },
     {
-      icon: '/icons/Icon (3).svg',
+      icon: '/icons/metrics.svg',
       title: 'Analyzing SEO metrics',
       subtitle: 'To identify areas for improvement',
       status: 'Selected',
@@ -58,7 +58,7 @@ const WhyUsSection = () => {
 
   return (
     <section className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
@@ -71,9 +71,10 @@ const WhyUsSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+<div className="grid lg:grid-cols-3 gap-10 items-stretch">
+
           {/* Column 1 */}
-          <div className="bg-[#FEF7EC] p-6 rounded-2xl">
+          <div className="bg-[#FEF7EC] p-6 rounded-2xl h-full">
             <h3 className="text-2xl font-bold mb-6">Empowering your digital success</h3>
             <p className="text-muted-foreground mb-6">
               Notionhive offers affordable SEO packages to boost your website's organic
@@ -105,61 +106,82 @@ const WhyUsSection = () => {
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col gap-8">
-            <div className="bg-[#FFFCF9] p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-              <h4 className="text-lg font-semibold mb-4">Comprehensive organic seo services</h4>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+           <div className="lg:col-span-2 grid gap-8 h-full">
+
+            {/* Row 1 - SEO Services */}
+            <div className="bg-[#FFFCF9] p-6 rounded-2xl shadow-md hover:shadow-xl transition flex flex-col lg:flex-row lg:items-center lg:flex-nowrap gap-6 h-full">
+              <div className="flex-1">
+                <h4 className="text-xl font-bold mb-2 whitespace-nowrap">
+  Comprehensive organic seo services
+</h4>
+
                 <p className="text-sm text-muted-foreground">
                   Attract customers in your specific area with our comprehensive local SEO services. We'll
                   consult, implement, and optimize your website to help you climb the search engine ladder
                   organically.
                 </p>
-                <motion.div
-                  ref={chartRef}
-                  className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-xl w-full sm:w-56"
-                >
-                  <div className="text-xs text-muted-foreground mb-1">Engagement rate</div>
-                  <div className="flex items-center gap-1 mb-2">
-                    <div className="text-2xl font-bold text-green-500">100%</div>
-                    <span className="text-green-500">↑</span>
-                  </div>
-                  <div className="relative flex items-end gap-1 h-24">
-                    {[3, 4, 5, 5, 4].map((v, i) => (
-                      <motion.div
-                        key={i}
-                        custom={i}
-                        initial="hidden"
-                        animate={controls}
-                        variants={chartVariants}
-                        className="bg-blue-500 rounded-t w-6"
-                      />
-                    ))}
-                    <motion.svg
-                      className="absolute top-0 left-0 w-full h-full"
-                      viewBox="0 0 100 100"
-                      preserveAspectRatio="none"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1.2 }}
-                    >
-                      <polyline
-                        fill="none"
-                        stroke="gold"
-                        strokeWidth="2"
-                        points="5,60 25,40 45,20 65,20 85,40"
-                      />
-                    </motion.svg>
-                  </div>
-                  <div className="flex justify-between text-[10px] mt-2 text-gray-400">
-                    <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
-                  </div>
-                </motion.div>
               </div>
+              <motion.div
+                ref={chartRef}
+                className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-xl w-full sm:w-56"
+              >
+                <div className="text-xs text-muted-foreground mb-1">Engagement rate</div>
+                <div className="flex items-center gap-1 mb-2">
+                  <div className="text-2xl font-bold text-green-500">100%</div>
+                  <span className="text-green-500">↑</span>
+                </div>
+                <div className="relative flex items-end gap-1 h-24">
+                  {[3, 4, 5, 5, 4].map((v, i) => (
+                    <motion.div
+                      key={i}
+                      custom={i}
+                      initial="hidden"
+                      animate={controls}
+                      variants={chartVariants}
+                      className="bg-blue-500 rounded-t w-6"
+                    />
+                  ))}
+                  <motion.svg
+                    className="absolute top-0 left-0 w-full h-full"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: 1 }}
+                    transition={{ duration: 1.2 }}
+                  >
+                    <polyline
+                      fill="none"
+                      stroke="gold"
+                      strokeWidth="2"
+                      points="5,60 25,40 45,20 65,20 85,40"
+                    />
+                  </motion.svg>
+                </div>
+                <div className="flex justify-between text-[10px] mt-2 text-gray-400">
+                  <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+                </div>
+              </motion.div>
             </div>
 
-            <div className="bg-[#FFFCF9] p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-              <h4 className="text-lg font-semibold mb-4">Expert organic seo consultant</h4>
-              <div className="flex items-center gap-4 mb-4">
+            {/* Row 2 - Consultant */}
+               <div className="bg-[#FFFCF9] p-6 rounded-2xl shadow-md hover:shadow-xl transition flex flex-col lg:flex-row lg:items-center lg:flex-nowrap gap-6 h-full">
+              <div className="flex-1">
+                <h4 className="text-xl font-bold mb-2 whitespace-nowrap">
+  Expert organic seo consultant
+</h4>
+
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: 0.7 }}
+                  className="text-sm text-muted-foreground"
+                >
+                  Our dedicated team of consultants will create customized strategies that will help you
+                  stand out from the crowd. Our experts will work closely to understand your needs,
+                  develop effective strategies, and offer support.
+                </motion.p>
+              </div>
+              <div className="flex flex-col items-center">
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
@@ -173,41 +195,29 @@ const WhyUsSection = () => {
                     className="rounded-full"
                   />
                 </motion.div>
-                <div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
-                    className="font-semibold"
-                  >
-                    SEO Expert
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-yellow-400"
-                  >
-                    {'★'.repeat(5)}
-                  </motion.div>
-                </div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="font-semibold mt-2"
+                >
+                  SEO Expert
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                  className="text-yellow-400"
+                >
+                  {'★'.repeat(5)}
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                  className="w-24 h-2 rounded bg-gradient-to-r from-yellow-300 to-yellow-500 mt-2"
+                />
               </div>
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="w-full h-2 rounded bg-gradient-to-r from-yellow-300 to-yellow-500 mb-4"
-              />
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.7 }}
-                className="text-sm text-muted-foreground"
-              >
-                Our dedicated team of consultants will create customized strategies that will help you
-                stand out from the crowd. Our experts will work closely to understand your needs,
-                develop effective strategies, and offer support.
-              </motion.p>
             </div>
           </div>
         </div>

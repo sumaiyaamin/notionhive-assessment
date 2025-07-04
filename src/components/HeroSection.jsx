@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import TrustedBySection from './TrustedBy';
 
 const HeroSection = () => {
   return (
@@ -99,6 +100,7 @@ const HeroSection = () => {
           </div>
 
         </div>
+        <TrustedBySection />
       </div>
     </section>
   );

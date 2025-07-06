@@ -18,9 +18,8 @@ A modern, responsive SEO services Landing page  built with Next.js and Tailwind 
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework**: React 18
-- **Language**: TypeScript
-- **Build Tool**: Vite
+- **Frontend Framework**: Next js
+- **Language**: Javascript
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Animations**: Framer-Motion
@@ -30,8 +29,8 @@ A modern, responsive SEO services Landing page  built with Next.js and Tailwind 
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd seo-services-website
+git clone https://github.com/sumaiyaamin/notionhive-assessment
+cd notionhive-assessment
 ```
 
 2. Install dependencies:

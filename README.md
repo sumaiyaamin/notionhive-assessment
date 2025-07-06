@@ -50,17 +50,17 @@ npm run dev
 ```
 src/
 ├── components/
-│   ├── Header.tsx          # Navigation header
-│   ├── HeroSection.tsx     # Hero banner
-│   ├── TrustedBySection.tsx # Client logos
-│   ├── ServicesSection.tsx # Services showcase
-│   ├── WhyUsSection.tsx    # Features and benefits
-│   ├── ProcessSection.tsx  # Step-by-step process
-│   ├── FAQSection.tsx      # Frequently asked questions
-│   ├── TestimonialsSection.tsx # Client testimonials
-│   ├── BlogSection.tsx     # Blog articles preview
-│   ├── ContactSection.tsx  # Contact form
-│   └── Footer.tsx          # Footer section
+│   ├── Header.jsx          # Navigation header
+│   ├── HeroSection.jsx     # Hero banner
+│   ├── TrustedBySection.jsx # Client logos
+│   ├── ServicesSection.jsx # Services showcase
+│   ├── WhyUsSection.jsx    # Features and benefits
+│   ├── ProcessSection.jsx  # Step-by-step process
+│   ├── FAQSection.jsx      # Frequently asked questions
+│   ├── TestimonialsSection.jsx # Client testimonials
+│   ├── BlogSection.jsx     # Blog articles preview
+│   ├── ContactSection.jsx  # Contact form
+│   └── Footer.jsx          # Footer section
 
 ```
 

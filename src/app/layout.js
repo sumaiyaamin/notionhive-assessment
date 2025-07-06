@@ -5,6 +5,14 @@ import HeroSection from "@/components/HeroSection";
 import TrustedBySection from "@/components/TrustedBy";
 import ServicesSection from "@/components/ServicesSection";
 import WhyUsSection from "@/components/WhyUsSection";
+import FAQSection from "@/components/FAQSection";
+import ProcessSection from "@/components/ProcessSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+
+import { Toaster } from "react-hot-toast";  
+import ContactSection from "@/components/ContactSection";
+import BlogSection from "@/components/BlogSection";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +39,18 @@ export default function RootLayout({ children }) {
         <HeroSection />
         <ServicesSection />
         <WhyUsSection />
+        <FAQSection />
+        <ProcessSection />
+        <TestimonialsSection />
+        <ContactSection />
+        <BlogSection />
+        <Footer />
         {children}
+
+       
+        <Toaster position="top-right" />
       </body>
     </html>
   );
 }
+
